@@ -14,6 +14,9 @@ function Header()
                     <li>Contact Us</li>
                 </ul>
             </div>
+            <div className="bar">
+            <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
 
             

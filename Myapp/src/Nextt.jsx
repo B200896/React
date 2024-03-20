@@ -4,7 +4,6 @@ function Nextt()
         <div className="next">
             <div className="section-heading">
             <h2>About Sixteen Clothing</h2>
-            <hr />
             </div>
             <div className="column">
                 <div className="left">

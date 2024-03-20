@@ -6,7 +6,7 @@ function Product(props) {
 
         <div className="Product">
             <div className="columns">
-                <div className="next">
+                <div className="my-next">
                     <h2>Latest Products</h2>
                     <p>view all products</p>
                 </div>
