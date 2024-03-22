@@ -13,7 +13,8 @@
 
     <input type="text" placeholder="Enter Your Number 1" id="inp">
     <input type="text" placeholder="Enter Your Number 2" id="inp1">
-    <button id="btn">Submit</button>
+    <button id="btn">Swap</button>
+    
 
     <script>
         
@@ -26,8 +27,12 @@
 
             let a = Number(document.getElementById("inp").value);
             let b = Number(document.getElementById("inp1").value);
-            console.log(typeof(a))
-            console.log(a+b)
+            let temp = a;
+            a = b;
+            b = temp;
+            
+            document.getElementById("inp").value = a;
+            document.getElementById("inp1").value = b;
         }
       
     </script>
