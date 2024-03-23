@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+
+        /* .body { */
+        /* display: flex; */
+        /* justify-content: center; */
+        /* background-color: white; */
+        /* text-align: center; */
+        /* } */
+
+        .head {
+            margin: auto;
+            height: 80vh;
+            background-color: white;
+            width: 50%;
+            border: 5px solid black;
+        }
+
+        input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px auto;
+        }
+
+        label {
+
+            display: flex;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        select {
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+
+        .circle {
+            height: 30px;
+            width: 200px;
+            border-radius: 5px;
+            /* background-color: brown; */
+            margin-top: 50px;
+            display: flex;
+        }
+
+        #color-1 {
+            height: 30px;
+            width: 90px;
+            border-radius: 50px;
+            background-color: red;
+            margin-right: 10px;
+        }
+
+        #color-2 {
+            height: 30px;
+            width: 90px;
+            border-radius: 50px;
+            background-color: blue;
+            margin-top: 2px;
+            margin-right: 10px;
+
+        }
+
+        #color-3 {
+            height: 30px;
+            width: 90px;
+            border-radius: 50px;
+            background-color: yellow;
+            margin-top: 2px;
+            margin-right: 10px;
+        }
+
+        #color-4 {
+            height: 30px;
+            width: 90px;
+            border-radius: 50px;
+            background-color: black;
+            margin-top: 2px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body id="body-1">
+    <div class="body">
+        <div class="head">
+            <form action="#">
+                <label for="lang">Select Your Domain:</label>
+                <select name="choice" id="lang">
+                    <option value="none">----Make a choice----</option>
+                    <option value="React">React</option>
+                    <option value="django">Django</option>
+                    <option value="angular">Angular</option>
+                    <option value="Aws">AWS</option>
+                </select>
+            </form>
+            <div class="circle" id="color-bar">
+                <div id="color-1"></div>
+                <div id="color-2"></div>
+                <div id="color-3"></div>
+                <div id="color-4"></div>
+            </div>
+            <p id="para">
+            
+            </p>
+
+
+        </div>
+    </div>
+    <script>
+        document.getElementById("color-1").onclick = function () {
+            document.getElementById("body-1").style.backgroundColor = "red";
+        }
+        document.getElementById("color-2").onclick = function () {
+            document.getElementById("body-1").style.backgroundColor = "blue";
+        }
+        document.getElementById("color-3").onclick = function () {
+            document.getElementById("body-1").style.backgroundColor = "yellow";
+        }
+        document.getElementById("color-4").onclick = function () {
+            document.getElementById("body-1").style.backgroundColor = "black";
+        }
+        document.getElementById("lang").onclick=function()
+        {
+            let a=document.getElementById("lang").value;
+            if(a=="React")
+            {
+                document.getElementById("para").innerText="This is react blog";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
