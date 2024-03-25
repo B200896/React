@@ -1,0 +1,24 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header{
+
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #eee;
+}
+
+.header ul{
+  display: flex;
+}
+
+.header ul li{
+
+  list-style: none;
+  margin: 10px;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
