@@ -292,6 +292,12 @@
   display: none;
 }
 
+.link{
+
+  color: white;
+  text-decoration: none;
+}
+
 
 @media (max-width:577px){
 

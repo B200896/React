@@ -1,24 +1,16 @@
 
 import './App.css'
 import Header from './Header'
-import Image from './Image'
-import Product from './Product'
-import Nextt from './Nextt'
-import Footer from './Footer'
-
+import { Outlet } from 'react-router-dom'
 function App() {
 
 
   return (
     <>
     <Header />
-    <Image />
-    <Product  />
-    <Nextt/>
-    <Footer/>
-
+    <Outlet />
     </>
   )
 }
 
-export default App
+export default App;
