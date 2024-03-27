@@ -1,0 +1,29 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header{
+
+  display: flex;
+  justify-content: center;
+  background-color:rgb(103, 103, 156);
+  color: white;
+  padding: 10px;
+}
+
+.header ul{
+  display: flex;
+  margin-left:50%;
+}
+
+.header ul li{
+  
+  margin: 20px;
+  font-size: 1.5rem;
+  list-style: none;
+  background-color: beige;
+
+  font-family: sans-serif;
+}

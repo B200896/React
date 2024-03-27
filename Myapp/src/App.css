@@ -5,6 +5,7 @@
   font-family: sans-serif;
 }
 .header{
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -70,6 +71,7 @@
   /* margin-left: 20px; */
   /* margin-bottom: 20px; */
   text-align: center;
+  font-family:sans-serif;
   /* justify-content: space-evenly; */
 }
 .Image-container h2
@@ -309,7 +311,30 @@
 
     font-size: 20px;
   }
-  
+  .product-header
+  {
+    /* background-image: url('https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/products-heading.jpg'); */
+    /* background-image:url('https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/products-heading.jpg'); */
+
+    height: 100vh;
+    width: 100%;
+    background-color: #f33f3f;
+    display: flex;
+    align-items: center;
+
+     /* background-size: cover; */
+
+  }
+  .product-header h3
+  {
+    margin:60px;
+  }
+  .product-header-2
+  {
+    margin: 90px;
+    text-transform: capitalize;
+  }
+
 }
 
 

@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom"
 function Header()
 {
     return(
@@ -8,8 +9,13 @@ function Header()
             <div className="right">
                 <ul>
 
-                    <li>Home</li>
-                    <li>Our Products</li>
+                    <li> 
+                        <Link to="">Home</Link>
+
+                    </li>
+                    <li>
+                        <Link to="our products">Our Products</Link>
+                    </li>
                     <li>About Us</li>
                     <li>Contact Us</li>
                 </ul>

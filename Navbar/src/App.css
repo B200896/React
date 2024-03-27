@@ -1,0 +1,51 @@
+.header
+{
+  height: 15vh;
+  width: 100%;
+  background-color:rgb(99, 99, 134);
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+.head ul
+{
+  list-style: none;
+  display: flex;
+  margin-right: 70px;
+}
+.head ul li
+{
+  font-size: 30px;
+  margin: 40px;
+  cursor: pointer;
+  font-family: sans-serif;
+
+
+}
+.start
+{
+  margin: 25px;
+}
+.image
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+.home
+{
+  display: flex;
+  justify-content: space-between;
+  /* margin-left:40%; */
+  font-family: sans-serif;
+  margin-top: 80px;
+}
+.home-2
+{
+  margin-left: 100px;
+}
+.home-1
+{
+  margin-left:450px;
+}
