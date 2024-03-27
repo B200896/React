@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import {Link} from "react-router-dom"
+=======
+import { Link } from "react-router-dom";
+
+>>>>>>> 152de3c819fb78fb1f0c1234fb384d7ef0c6a1b8
 function Header()
 {
     return(
@@ -9,6 +14,7 @@ function Header()
             <div className="right">
                 <ul>
 
+<<<<<<< HEAD
                     <li> 
                         <Link to="">Home</Link>
 
@@ -18,6 +24,20 @@ function Header()
                     </li>
                     <li>About Us</li>
                     <li>Contact Us</li>
+=======
+                    <li>
+                       <Link to = ""  className="link">Home</Link>
+                    </li>
+                    <li>
+                       <Link to = "our_product" className="link">Our Products</Link> 
+                    </li>
+                    <li>
+                       <Link to = "about" className="link">About Us</Link> 
+                    </li>
+                    <li>
+                      <Link to = "contact" className="link">Contact Us</Link>  
+                    </li>
+>>>>>>> 152de3c819fb78fb1f0c1234fb384d7ef0c6a1b8
                 </ul>
             </div>
             <div className="bar">
