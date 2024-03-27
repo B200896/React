@@ -1,0 +1,35 @@
+.our_product{
+
+  
+    width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.our_product_menu{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #eee;
+}
+
+.our_product_menu ul{
+    display: flex;
+    
+}
+
+.our_product ul li{
+
+    margin: 0rem 1rem;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}

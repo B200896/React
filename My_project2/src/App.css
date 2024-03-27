@@ -1,0 +1,319 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+}
+
+.header{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #232323;
+  color: white;
+  padding: 0px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.header ul{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.header ul li{
+
+  margin: 10px;
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+  text-transform: capitalize;
+}
+
+.header ul li:hover{
+  border-bottom: 1px solid #f33f3f;
+
+}
+
+.left span{
+
+  color: #f33f3f;
+}
+
+.image-container{
+   
+  background: url('https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/slide_01.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.image-container h2{
+  color: #f33f3f;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 8px 0px;
+}
+
+.image-container h1{
+
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.products{
+
+  width: 70%;
+  margin: auto;
+  margin-top: 2rem;
+
+}
+
+.products-header{
+
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(199, 196, 196);
+  
+}
+
+.products-header a{
+
+  text-decoration: none;
+  color: red;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.product-container{
+
+   border: 1px solid #eee;
+   width: 20rem;
+   margin: 40px 0px;
+   transition: all 1s linear;
+}
+
+.product-container img{
+  width: 100%;
+}
+
+.product-container .content-upper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-upper,.content-mid,.content-lower{
+
+  margin: 20px 0px;
+}
+
+.product-container .content{
+
+  padding: 15px;
+}
+
+.content-lower{
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-lower i{
+
+  color: #f33f3f;
+}
+
+.content-lower .reviews-text{
+
+  color: #f33f3f;
+}
+
+.content-upper h3:nth-child(1){
+  
+  color: #1a6692;
+}
+
+.prod-container{
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.prod-container .product-container{
+
+  flex-grow: 2;
+  margin: 8px 5px;
+}
+
+.container-about{
+
+  width: 70%;
+  margin: auto;
+  margin-top: 3rem;
+
+}
+
+.container-about h1{
+
+  border-bottom: 1px solid #eee;
+  font-weight: 500;
+  padding: 10px 0px;
+}
+
+.inner-about{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 5px;
+  text-align: justify;
+}
+
+.inner-about-box{
+
+  width: 30rem;
+  margin: 40px 0px;
+ 
+}
+
+.inner-about-box img{
+  width: 100%;
+}
+
+.inner-about-box p,p,ul{
+
+  margin: 20px 0px;
+}
+
+.inner-about-box ul li{
+
+  margin: 10px 20px;
+}
+
+.inner-about-box p:nth-child(1){
+
+  color: #1a6692;
+}
+
+.inner-about-box p:nth-child(2){
+
+  line-height: 30px;
+}
+
+.bar{
+  display: none;
+  cursor: pointer;
+  transition: all 2s ease-in-out;
+  
+}
+
+.white-box{
+
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  color: black;
+  top: -14rem;
+  left: 0rem;
+transition: all 2s ease-in-out;
+  display: none;
+ 
+
+}
+
+.white-box ul{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.white-box ul li{
+
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  padding: 5px;
+}
+
+
+
+/* @media (max-width:707px){
+
+  .image-container h1{
+
+    font-size: 30px;
+  }
+  
+} */
+
+.link{
+
+  text-decoration: none;
+  color: white;
+}
+
+
+
+@media (max-width:707px){
+
+  .image-container h1{
+
+    font-size: 30px;
+  }
+
+  .image-container h1{
+
+    font-size: 20px;
+  }
+
+  .header .right{
+
+    display: none;
+  }
+
+  .header{
+
+     padding: 15px 0px;  
+  }
+   .white-box{
+
+    transition: all 2s ease-in-out;
+   }
+  .bar{
+    display: block;
+    font-size: 1.5rem;
+    background-color: white;
+    color:#f33f3f;
+    padding: 7px 18px;
+    transition: all 2s ease-in-out;
+  }
+
+  .bar:hover .white-box{
+
+    display: block;
+    transform: translateY(298px);
+  }
+  
+
+  .products{
+
+    width: 98%;
+  }
+
+
+  
+}

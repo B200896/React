@@ -1,0 +1,38 @@
+[
+    {
+        "image":"https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/product_01.jpg",
+        "title":"Title goes here",
+        "price":"25.75",
+        "description":"Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur."       
+    },
+    {
+        "image":"https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/product_02.jpg",
+        "title":"Title goes here",
+        "price":"30.75",
+        "description":"Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur."       
+    },
+    {
+        "image":"https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/product_03.jpg",
+        "title":"Title goes here",
+        "price":"55.75",
+        "description":"Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur."       
+    },
+    {
+        "image":"https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/product_04.jpg",
+        "title":"Title goes here",
+        "price":"2.75",
+        "description":"Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur."       
+    },
+    {
+        "image":"https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/product_05.jpg",
+        "title":"Title goes here",
+        "price":"70.75",
+        "description":"Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur."       
+    },
+    {
+        "image":"https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/product_06.jpg",
+        "title":"Title goes here",
+        "price":"5.75",
+        "description":"Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur."       
+    }
+]
