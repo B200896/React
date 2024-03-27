@@ -3,7 +3,7 @@ function Home_product(props) {
   return (
     <>
       <div className="product-container">
-        <div className="image">
+        <div className="images">
           <img
             src={props.image}
             alt=""
