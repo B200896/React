@@ -1,24 +1,38 @@
 import { useState } from "react";
 
 function Textarea() {
-  let [name, setname] = useState("Mohit");
+  let [a, seta] = useState("");
+  let [mycolor,setcolor] = useState("");
+  function text(e) {
+    seta(e.target.value);
+  }
 
-  function inp(e) {
-    name = e.target.value;
-}
+  function Uppercase() {
+    seta(a.toUpperCase());
+  }
 
-function change() {
-      setname(name);
+  function Lowercase() {
+    seta(a.toLowerCase());
+  }
+
+  function color(event) {
+    setcolor(event.target.value);
+    console.log(mycolor)
   }
 
   return (
-    <>
-      <div className="input">
-        <h1>My Name is {name}</h1>
-        <input type="text" onChange={inp} />
-        <button onClick={change}>Submit</button>
+    <div className="textarea">
+      <textarea name="" id="" cols="50" rows="20" onChange={text}></textarea>
+
+      <div className="text">
+        <h3 style={{color:mycolor}}>{a}</h3>
       </div>
-    </>
+
+      <button onClick={Uppercase}>Uppercase</button>
+      <button onClick={Lowercase}>Lowercase</button>
+
+      <input type="color" onChange={color} />
+    </div>
   );
 }
 
