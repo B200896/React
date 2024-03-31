@@ -31,7 +31,7 @@ function Textarea() {
       <button onClick={Uppercase}>Uppercase</button>
       <button onClick={Lowercase}>Lowercase</button>
 
-      <input type="color" onChange={color} />
+      <input type="3or" onChange={color} />
     </div>
   );
 }
