@@ -1,14 +1,14 @@
 import './App.css'
-// import Counter from './Counter'
-import Textarea from './Textarea'
+import Counter from './Counter'
+// import Textarea from './Textarea'
 
 function App() {
  
 
   return (
     <>
-     {/* <Counter /> */}
-     <Textarea />
+     <Counter />
+     {/* <Textarea /> */}
     </>
   )
 }

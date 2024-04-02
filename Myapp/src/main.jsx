@@ -7,7 +7,7 @@ import {RouterProvider, createBrowserRouter,createRoutesFromElements} from 'reac
 import { Route} from 'react-router-dom'
 import Home from './Home/Home.jsx'
 import Product from './Our/Product.jsx'
-import About from './About/About.jsx'
+import About from './About.jsx'
 
 // import './index.css'
 
