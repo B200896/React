@@ -1,0 +1,59 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+#counter {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+textarea{
+
+  border: 2px solid black;
+  width: 50%;
+  margin: auto;
+  padding: 40px;
+}
+
+.textarea input{
+
+  width: 300px;
+  height: 35px;
+  margin: 20px 0px;
+  padding: 5px;
+}
+
+.textarea button{
+
+  height: 35px;
+  width: 120px;
+  padding: 5px;
+  margin: 5px 0px;
+
+}
+
+
+textarea{
+
+  font-size: 30px;
+  margin: 20px 0px;
+}
+.text-area textarea
+{
+  width: 350px;
+  height: 35px;
+}
+.text-area button
+{
+  margin: 5px 10px;
+}
