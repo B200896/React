@@ -7,7 +7,12 @@ import {RouterProvider, createBrowserRouter,createRoutesFromElements} from 'reac
 import { Route} from 'react-router-dom'
 import Home from './Home/Home.jsx'
 import Product from './Our/Product.jsx'
+
 import About from './About/About.jsx'
+
+// import About from './About.jsx'
+import Contact from './Contact.jsx'
+
 
 // import './index.css'
 
@@ -19,6 +24,7 @@ const router = createBrowserRouter(
         <Route path='' element = {<Home />}/>
         <Route path='our_product' element = {<Product />} />
         <Route path='about' element = {<About />} />
+        <Route path='contact' element ={<Contact/>}/>
      </Route>
    )
 )
