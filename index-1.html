@@ -1,148 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>To-Do List App</title>
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            font-family: sans-serif;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
         }
-
-        /* .body { */
-        /* display: flex; */
-        /* justify-content: center; */
-        /* background-color: white; */
-        /* text-align: center; */
-        /* } */
-
-        .head {
-            margin: auto;
-            height: 80vh;
-            background-color: white;
-            width: 50%;
-            border: 5px solid black;
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        input {
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: calc(100% - 80px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        input[type="date"] {
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            padding: 8px 16px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .task-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .task {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            margin: 0px auto;
         }
-
-        label {
-
-            display: flex;
+        .task input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .task .deadline {
+            margin-left: auto;
+            font-size: 14px;
+            color: #666;
+        }
+        .task .completed {
+            text-decoration: line-through;
+            color: #888;
+        }
+        .filter {
             margin-top: 20px;
-            margin-left: 10px;
         }
-
-        select {
-            margin-left: 10px;
-            margin-top: 20px;
-        }
-
-        .circle {
-            height: 30px;
-            width: 200px;
-            border-radius: 5px;
-            /* background-color: brown; */
-            margin-top: 50px;
-            display: flex;
-        }
-
-        #color-1 {
-            height: 30px;
-            width: 90px;
-            border-radius: 50px;
-            background-color: red;
+        .filter label {
             margin-right: 10px;
-        }
-
-        #color-2 {
-            height: 30px;
-            width: 90px;
-            border-radius: 50px;
-            background-color: blue;
-            margin-top: 2px;
-            margin-right: 10px;
-
-        }
-
-        #color-3 {
-            height: 30px;
-            width: 90px;
-            border-radius: 50px;
-            background-color: yellow;
-            margin-top: 2px;
-            margin-right: 10px;
-        }
-
-        #color-4 {
-            height: 30px;
-            width: 90px;
-            border-radius: 50px;
-            background-color: black;
-            margin-top: 2px;
-            margin-right: 10px;
+            cursor: pointer;
         }
     </style>
 </head>
-
-<body id="body-1">
-    <div class="body">
-        <div class="head">
-            <form action="#">
-                <label for="lang">Select Your Domain:</label>
-                <select name="choice" id="lang">
-                    <option value="none">----Make a choice----</option>
-                    <option value="React">React</option>
-                    <option value="django">Django</option>
-                    <option value="angular">Angular</option>
-                    <option value="Aws">AWS</option>
-                </select>
-            </form>
-            <div class="circle" id="color-bar">
-                <div id="color-1"></div>
-                <div id="color-2"></div>
-                <div id="color-3"></div>
-                <div id="color-4"></div>
-            </div>
-            <p id="para">
-            
-            </p>
-
-
+<body>
+    <div class="container">
+        <h1>To-Do List App</h1>
+        <input type="text" id="taskInput" placeholder="Enter task...">
+        <input type="date" id="deadlineInput">
+        <button onclick="addTask()">Add Task</button>
+        <div class="filter">
+            <input type="radio" name="filter" id="filterAll" onclick="filterTasks('all')" checked>
+            <label for="filterAll">All</label>
+            <input type="radio" name="filter" id="filterActive" onclick="filterTasks('active')">
+            <label for="filterActive">Active</label>
+            <input type="radio" name="filter" id="filterCompleted" onclick="filterTasks('completed')">
+            <label for="filterCompleted">Completed</label>
         </div>
+        <ul id="taskList" class="task-list"></ul>
     </div>
+
     <script>
-        document.getElementById("color-1").onclick = function () {
-            document.getElementById("body-1").style.backgroundColor = "red";
-        }
-        document.getElementById("color-2").onclick = function () {
-            document.getElementById("body-1").style.backgroundColor = "blue";
-        }
-        document.getElementById("color-3").onclick = function () {
-            document.getElementById("body-1").style.backgroundColor = "yellow";
-        }
-        document.getElementById("color-4").onclick = function () {
-            document.getElementById("body-1").style.backgroundColor = "black";
-        }
-        document.getElementById("lang").onclick=function()
-        {
-            let a=document.getElementById("lang").value;
-            if(a=="React")
-            {
-                document.getElementById("para").innerText="This is react blog";
-            }
+        let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+        function saveTasks() {
+            localStorage.setItem('tasks', JSON.stringify(tasks));
         }
 
+        function addTask() {
+            const taskInput = document.getElementById('taskInput');
+            const deadlineInput = document.getElementById('deadlineInput');
+            const taskText = taskInput.value.trim();
+            const deadline = deadlineInput.value.trim();
+
+            if (taskText === '') {
+                alert('Please enter a task.');
+                return;
+            }
+
+            const newTask = {
+                id: Date.now(),
+                text: taskText,
+                deadline: deadline === '' ? null : deadline,
+                completed: false
+            };
+
+            tasks.push(newTask);
+            saveTasks();
+            renderTasks();
+            taskInput.value = '';
+            deadlineInput.value = '';
+        }
+
+        function editTask(id, newText) {
+            const taskIndex = tasks.findIndex(task => task.id === id);
+            tasks[taskIndex].text = newText;
+            saveTasks();
+            renderTasks();
+        }
+
+        function toggleCompleted(id) {
+            const taskIndex = tasks.findIndex(task => task.id === id);
+            tasks[taskIndex].completed = !tasks[taskIndex].completed;
+            saveTasks();
+            renderTasks();
+        }
+
+        function deleteTask(id) {
+            tasks = tasks.filter(task => task.id !== id);
+            saveTasks();
+            renderTasks();
+        }
+
+        function filterTasks(filterType) {
+            const taskList = document.getElementById('taskList');
+            taskList.innerHTML = '';
+            let filteredTasks = [];
+
+            if (filterType === 'active') {
+                filteredTasks = tasks.filter(task => !task.completed);
+            } else if (filterType === 'completed') {
+                filteredTasks = tasks.filter(task => task.completed);
+            } else {
+                filteredTasks = tasks;
+            }
+
+            filteredTasks.forEach(task => {
+                const taskElement = document.createElement('li');
+                taskElement.className = 'task';
+                if (task.completed) {
+                    taskElement.classList.add('completed');
+                }
+                const deadlineInfo = task.deadline ? `<span class="deadline"> - Deadline: ${task.deadline}</span>` : '';
+                taskElement.innerHTML = `
+                    <input type="checkbox" onchange="toggleCompleted(${task.id})" ${task.completed ? 'checked' : ''}>
+                    <span>${task.text}</span>
+                    ${deadlineInfo}
+                    <button onclick="editTask(${task.id}, prompt('Edit task:', '${task.text}'))">Edit</button>
+                    <button onclick="deleteTask(${task.id})">Delete</button>
+                `;
+                taskList.appendChild(taskElement);
+            });
+        }
+
+        function renderTasks() {
+            filterTasks('all');
+        }
+
+        renderTasks();
     </script>
 </body>
-
 </html>

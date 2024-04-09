@@ -26,130 +26,64 @@
     font-family: sans-serif;
     text-transform: uppercase;
 }
-.location h2 {
-    color: #1e1e1e;
-    font-size: 28px;
-    font-weight: 540;
-    margin-top: 252px;
-    letter-spacing: 2px;
-    margin-left: 88px;
-    text-transform: capitalize;
+
+.location{
+
+    position: relative;
+    top: 250px;
+    width: 70%;
+    margin: auto;
 }
-.right h4 {
-    font-size: 20px;
-    color: #1a6692;
-    font-size: 30px;
-}
-.map .left img {
-    width: 900px;
-    margin-left: 80px;
-    margin-top: 40px;
-}
-.map .right {
-    margin-left: 190px;
-    font-size: 30px;
-}
-.map {
+
+.inner-location{
+
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.form {
-    margin-top: 170px;
+
+.left-location{
+    width: 50rem;
+    flex-grow: 2;
+    
+}
+
+.right-location{
+
+    width: 25rem;
+    padding: 0px 20px;
+    flex-grow: 2;
+}
+
+.h1{
+
+    margin: 30px 0px;
+    border-bottom: 2px solid #eee;
+    font-weight: 300;
+}
+
+.h3{
+
+    color: #1a6692;
+    font-size: 25px;
+}
+
+.right-location h3,p{
+
+    margin: 20px 0px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.left-location img{
+
     width: 100%;
-    height: 100vh;
+    height: 400px;
 }
-.form .form-1 {
-    color: #212529;
-    width: 100px;
-    height: 100vh;
-    margin-top: -99px;
-    margin-right: 60px;
-    margin-bottom: -900px;
-}
-.form fieldset {
-    margin-top: -93px;
-    height: 36px;
-    width: 800%;
-    margin-left: 70px;
-}
-.message h2 {
-    color: #1e1e1e;
-    font-size: 28px;
-    font-weight: 540;
-    margin-top: 87px;
-    letter-spacing: 2px;
-    margin-left: 88px;
-    text-transform: capitalize;
-}
-.accordian h3 {
-    color: #f33f3f;
-    font-size: 22px;
-    font-family: sans-serif;
-    margin-left: 100px;
-}
-.accordian p {
-    font-size: 19px;
-    margin-left: 100px;
-}
-.accordian {
-    margin-top: 44px;
-}
-.contact-form {
-    display: flex;
-}
-.accordian h2 {
-    color: #1a6692;
-    margin-left: 98px;
-    letter-spacing: 1px;
-    font-size: 22px;
-    font-family: sans-serif;
-}
-.accordian-title {
-    margin-top: 100px;
-}
-.form button {
-    padding: 15px 25px;
-    font-weight: 300;
-    font-size: 17px;
-    color: #ffff;
-    background-color: #f33f3f;
-    border-radius: 7px;
-    border: none;
-    margin-left: 70px;
-}
-.accordian-head h2 {
-    color: #1e1e1e;
-    font-size: 28px;
-    font-weight: 540;
-    /* margin-top: 3px; */
-    letter-spacing: 2px;
-    margin-left: 75px;
-    text-transform: capitalize;
-}
-.accordian-head {
-    margin-top: -630px;
-}
-.accordian-content {
-    display: flex;
-    justify-content: space-between;
-    /* width: 40px; */
-}
-.accordian-content .image {
-    margin-top: 50px;
-    margin-left: 40px;
-}
-.accordian-content img {
-    width: 300px;
-}
-.accordian-footer p {
-    color: #4a4a4a;
-    font-size: 20px;
-    font-weight: 300;
-    margin-left: 40px;
-    line-height: 24px;
-    font-family: sans-serif;
-    margin-top: 250px;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    margin-left: 647px;
+
+.right-location i{
+
+    font-size: 30px;
+    margin: 5px 5px;
+    background-color: #eee;
+    padding: 20px;
 }
