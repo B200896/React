@@ -1,0 +1,25 @@
+  1  Reverse a String: Write a function that takes a string as input and returns the string reversed.
+
+  2  Palindrome Check: Write a function that takes a string as input and returns true if it's a palindrome (reads the same forwards and backwards), false otherwise.
+
+  3  Longest Word: Write a function that takes a string as input and returns the longest word in the string. If there are multiple words with the same length, return the first one.
+
+  4  Vowel Count: Write a function that takes a string as input and returns the number of vowels in the string.
+
+  5  Capitalize Letters: Write a function that takes a string as input and capitalizes the first letter of each word in the string.
+
+  6  Reverse Words: Write a function that takes a string as input and reverses the order of the words in the string.
+
+  7 Character Frequency: Write a function that takes a string as input and returns an object with the frequency of each character in the string.
+
+  8  Anagram Check: Write a function that takes two strings as input and returns true if they are anagrams of each other, false otherwise.
+
+  9  Word Frequency: Write a function that takes a string as input and returns an object with the frequency of each word in the string.
+
+  10  Caesar Cipher: Write a function that takes a string and a number (the shift amount) as input and returns the string encoded using a Caesar cipher with the given shift amount.
+
+  11  Remove Duplicates: Write a function that takes a string as input and returns a new string with duplicate characters removed.
+
+  12  Title Case: Write a function that takes a string as input and converts it to title case (the first letter of each word is capitalized).
+
+  13  Word Capitalization: Write a function that takes a string as input and capitalizes the first letter of each word in the string.

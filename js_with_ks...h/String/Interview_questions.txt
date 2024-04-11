@@ -1,0 +1,15 @@
+  1  What are JavaScript strings? How are they different from other primitive data types?
+  2  How do you create a string in JavaScript?
+  3  What is the difference between using single quotes, double quotes, and backticks for defining strings?
+  4  How do you access characters in a string in JavaScript?
+  5  How can you determine the length of a string in JavaScript?
+  6  What is string concatenation? How do you concatenate strings in JavaScript?
+  7  What are template literals? How do you use them in JavaScript?
+  8  How do you convert a string to uppercase or lowercase in JavaScript?
+  9  How can you check if a string contains a specific substring in JavaScript?
+  10  How do you split a string into an array of substrings in JavaScript?
+  11  What is the difference between indexOf() and lastIndexOf() methods for strings in JavaScript?
+  12  How do you replace part of a string with another substring in JavaScript?
+  13  What are regular expressions (regex) in JavaScript? How can you use them with strings?
+  14  How can you trim whitespace from the beginning and end of a string in JavaScript?
+  15  What is the difference between slice(), substring(), and substr() methods for strings in JavaScript?
