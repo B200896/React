@@ -1,22 +1,22 @@
-    Write a Java Script Program to read and print elements of array. – using recursion.
-    Write a Java Script Program to print all negative elements in an array.
-    Write a Java Script Program to find sum of all array elements. – using recursion.
-    Write a Java Script Program to find maximum and minimum element in an array. – using recursion.
-    Write a Java Script Program to find second largest element in an array.
-    Write a Java Script Program to count total number of even and odd elements in an array.
-    Write a Java Script Program to count total number of negative elements in an array.
-    Write a Java Script Program to copy all elements from an array to another array.
-    Write a Java Script Program to insert an element in an array.
-    Write a Java Script Program to delete an element from an array at specified position.
-    Write a Java Script Program to count frequency of each element in an array.
-    Write a Java Script Program to print all unique elements in the array.
-    Write a Java Script Program to count total number of duplicate elements in an array.
-    Write a Java Script Program to delete all duplicate elements from an array.
-    Write a Java Script Program to merge two array to third array.
-    Write a Java Script Program to find reverse of an array.
-    Write a Java Script Program to put even and odd elements of array in two separate array.
-    Write a Java Script Program to search an element in an array.
-    Write a Java Script Program to sort array elements in ascending or descending order.
-    Write a Java Script Program to sort even and odd elements of array separately.
-    Write a Java Script Program to left rotate an array.
-    Write a Java Script Program to right rotate an array.
+Write a Java Script Program to read and print elements of array. 
+Write a Java Script Program to print all negative elements in an array.
+Write a Java Script Program to find sum of all array elements. – using recursion.
+Write a Java Script Program to find maximum and minimum element in an array. – using recursion.
+Write a Java Script Program to find second largest element in an array.
+Write a Java Script Program to count total number of even and odd elements in an array.
+Write a Java Script Program to count total number of negative elements in an array.
+Write a Java Script Program to copy all elements from an array to another array.
+Write a Java Script Program to insert an element in an array.
+Write a Java Script Program to delete an element from an array at specified position.
+Write a Java Script Program to count frequency of each element in an array.
+Write a Java Script Program to print all unique elements in the array.
+Write a Java Script Program to count total number of duplicate elements in an array.
+Write a Java Script Program to delete all duplicate elements from an array.
+Write a Java Script Program to merge two array to third array.
+Write a Java Script Program to find reverse of an array.
+Write a Java Script Program to put even and odd elements of array in two separate array.
+Write a Java Script Program to search an element in an array.
+Write a Java Script Program to sort array elements in ascending or descending order.
+Write a Java Script Program to sort even and odd elements of array separately.
+Write a Java Script Program to left rotate an array.
+Write a Java Script Program to right rotate an array.
