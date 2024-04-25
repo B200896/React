@@ -1,0 +1,101 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background-color: white;
+    z-index: 999;
+    /* box-shadow: 0px 0px 8px rgb(172, 170, 170); */
+}
+
+.navbar-left{
+
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin: 10px 20px;
+}
+
+.navbar-left i{
+
+    margin: 0px 10px;
+}
+
+.navbar-center{
+
+    display: flex;
+    align-items: center;
+    width: 650px;
+    /* border: 2px solid black; */
+}
+
+.navbar-search{
+    width: 90%;
+    border: 1px solid #a7a6a6;
+    border-radius: 50px;
+}
+.mic{
+  
+   background-color: #efecec;
+   font-size: 20px;
+   padding: 12px 13px;
+   border-radius: 60px;
+   margin: 0px 10px;
+}
+.navbar-search input{
+
+    width: 90%;
+    padding: 12px 20px;
+    border-radius: 50px 0px 0px 50px;
+    border: none;
+    outline: none;
+    border-right: 1px solid #a7a6a6;
+}
+
+.search{
+
+    width: 10%;
+    text-align: center;
+    font-size: 18px;
+   
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right i{
+
+    font-size: 22px;
+    margin: 0px 10px;
+    
+}
+
+.navbar-user{
+    margin: 0px 20px;
+}
+
+.navbar-user img{
+
+    width: 40px;
+    border-radius: 50px;
+
+}
+
+.fa-video{
+
+    color: red;
+}
+
+
+.subscriptions h3{
+
+    margin: 10px 20px;
+    font-weight: 600;
+}
+
+
+

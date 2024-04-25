@@ -1,0 +1,8 @@
+.container{
+
+    width: 85%;
+    /* margin-left: 250px; */
+    position: absolute;
+    right:0;
+    top: 5rem;
+}
