@@ -37,8 +37,11 @@ const FileUpload = () => {
             "Content-Type": "multipart/form-data",
           },
         });
-        console.log("response.data.data",response.data)
-        setResponseData(response.data.data)
+        console.log("response.data.data",response)
+        // const data=JSON.parse(response.data)
+        // console.log("dataaa",data)
+        // console.log("%%%",data)
+        setResponseData(response.data.text)
         setError("")
         console.log("response",response)
 
@@ -65,7 +68,7 @@ const FileUpload = () => {
       
                 <div>
                     <h3>Parsed Data:</h3>
-                    <pre>{JSON.stringify(responseData, null, 2)}</pre>
+                   <p>{responseData}</p>
                 </div>
         
     </div>
