@@ -37,13 +37,16 @@ const FileUpload = () => {
             "Content-Type": "multipart/form-data",
           },
         });
-        console.log("response.data.data",response)
+        // console.log("response.data.data",response.data.aiResponse[0].text)
+
+        let resumedata = JSON.parse(response.data.aiResponse[0].text)
+        console.log(resumedata)
         // const data=JSON.parse(response.data)
         // console.log("dataaa",data)
         // console.log("%%%",data)
         setResponseData(response.data.text)
         setError("")
-        console.log("response",response)
+        // console.log("response",response)
 
        
     setSuccessMessage("File uploaded successfully!");
