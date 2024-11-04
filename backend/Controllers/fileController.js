@@ -2,8 +2,11 @@ const multer=require('multer')
 const path=require('path')
 const pdfparse=require('pdf-parse')
 const fs = require('fs')
+const { createClient } = require('@supabase/supabase-js');
+
 const {GoogleGenerativeAI} = require("@google/generative-ai")
 require('dotenv').config();
+
 const genAI= new GoogleGenerativeAI(process.env.API_KEY)
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 const prompt = "I'm developing a project that involves parsing text from resumes. I will provide you with the parsed text, and I need you to convert that information into structured JavaScript objects. Please ensure that the objects are formatted with keys and values, wrapped in curly braces, and separated by commas. The goal is for me to easily map over these objects in my frontend code. In the response text, i need you to provide me the data in the fields like Name, Education, Skills, Projects, Experience etc. Also make sure i get all the objects inside a single object called as 'aiResponse' and everything is inside of it and u dont need to mention ''''json' or anything just give me the direct object itself.";
