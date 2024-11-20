@@ -5,6 +5,7 @@ import './App.css'
 import FileUpload from './FileUpload'
 import Dashboard from './Dashboard'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import JobPage from './JobPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
         {/* Define Routes */}
         <Route path="/" element={<FileUpload />} />   {/* Home route for FileUpload */}
         <Route path="/dashboard" element={<Dashboard />} />  {/* Route for Dashboard */}
+        <Route path="/jobdata" element={<JobPage/>}/>
       </Routes>
     </Router>
     </>
